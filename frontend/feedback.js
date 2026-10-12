@@ -9,8 +9,7 @@ form.addEventListener("submit", async (event) => {
     const comment = document.getElementById("comment").value.trim();
 
     try {
-        const response = await fetch(
-"http://localhost:3000/feedback",            {
+        const response = await fetch("/feedback" ,         {
                 method: "POST",
 
                 headers: {
