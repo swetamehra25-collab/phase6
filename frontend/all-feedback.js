@@ -3,7 +3,7 @@ const feedbackList = document.getElementById("feedbackList");
 
 async function loadFeedback() {
     try {
-        const response = await fetch("http://localhost:3000/feedback");
+        const response = await fetch("/feedback");
 
         if (!response.ok) {
             throw new Error("Failed to fetch feedback");
