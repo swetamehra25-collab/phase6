@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            Feedback<span>Hub</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Submit Feedback</a>
+            <a href="all-feedback.html">All Feedback</a>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="hero">
+
+        <!-- Left Side -->
+        <section class="hero-content">
+            <p class="tag">STUDENT FEEDBACK</p>
+
+            <h1>
+                Your opinion
+                <span>matters.</span>
+            </h1>
+
+            <p class="hero-text">
+                Share your experience, thoughts and suggestions.
+                Your feedback helps us understand what is working
+                and where we can improve.
+            </p>
+
+            <div class="features">
+
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <div>
+                        <h3>Simple</h3>
+                        <p>Quick and easy feedback process.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">★</div>
+                    <div>
+                        <h3>Rate your experience</h3>
+                        <p>Give us a rating from 1 to 5.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">↗</div>
+                    <div>
+                        <h3>Make an impact</h3>
+                        <p>Your feedback helps us improve.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Right Side Form -->
+        <section class="feedback-form-section">
+
+            <div class="form-header">
+                <h2>Share your feedback</h2>
+                <p>It only takes a minute.</p>
+            </div>
+
+            <form id="feedbackForm">
+
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="rating">Your Rating</label>
+                    <select id="rating" required>
+                        <option value="">Select a rating</option>
+                        <option value="1">1 — Poor</option>
+                        <option value="2">2 — Fair</option>
+                        <option value="3">3 — Good</option>
+                        <option value="4">4 — Very Good</option>
+                        <option value="5">5 — Excellent</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="comment">Your Comment</label>
+                    <textarea
+                        id="comment"
+                        placeholder="Tell us about your experience..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit">
+                    Submit Feedback
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        Student Feedback Manager
+    </footer>
+
+    <script src="feedback.js"></script>
+
+</body>
+</html>
